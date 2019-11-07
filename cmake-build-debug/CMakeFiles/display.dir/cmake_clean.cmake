@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/display.dir/display.c.o"
+  "CMakeFiles/display.dir/errorPrinter.c.o"
   "display"
   "display.pdb"
 )

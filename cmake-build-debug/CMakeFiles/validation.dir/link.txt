@@ -1,1 +1,1 @@
-/usr/bin/cc -g  -rdynamic CMakeFiles/validation.dir/validation.c.o  -o validation 
+/usr/bin/cc -g  -rdynamic CMakeFiles/validation.dir/validation.c.o CMakeFiles/validation.dir/errorPrinter.c.o  -o validation 

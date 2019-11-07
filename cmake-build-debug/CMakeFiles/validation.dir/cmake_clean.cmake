@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/validation.dir/errorPrinter.c.o"
   "CMakeFiles/validation.dir/validation.c.o"
   "validation"
   "validation.pdb"

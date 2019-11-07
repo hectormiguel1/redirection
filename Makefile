@@ -1,8 +1,8 @@
 CC = gcc
 CFLAGS = -std=c99 -o
-VALIDATION_FILES = validation.c
+VALIDATION_FILES = validation.c errorPrinter.c
 VALIDATION_EXEC = validationMain
-DISPLAY_FILES = display.c
+DISPLAY_FILES = display.c errorPrinter.c
 DISPLAY_EXEC = displayMain
 DEPENDENCIES = validation.h display.h
 

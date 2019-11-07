@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
-
+#include "errorPrinter.h"
 
 const int MAX_YEAR = INT_MAX;
 const int MIN_YEAR = INT_MIN;
@@ -49,5 +49,4 @@ bool isLeapYear(int);
 bool isShortMonth(int);
 void printDate(Date *pDate);
 int processArgs(char arg[]);
-void printError(char *);
 void readUntil(int);

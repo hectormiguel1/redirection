@@ -124,6 +124,13 @@
 		<Unit filename="/home/hectorramirez/CLionProjects/redirection/display.h">
 			<Option target="display"/>
 		</Unit>
+		<Unit filename="/home/hectorramirez/CLionProjects/redirection/errorPrinter.c">
+			<Option target="validation"/>
+			<Option target="display"/>
+		</Unit>
+		<Unit filename="/home/hectorramirez/CLionProjects/redirection/errorPrinter.h">
+			<Option target="display"/>
+		</Unit>
 		<Unit filename="/home/hectorramirez/CLionProjects/redirection/validation.c">
 			<Option target="validation"/>
 		</Unit>

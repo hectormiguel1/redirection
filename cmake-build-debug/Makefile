@@ -163,6 +163,36 @@ display.c.s:
 	$(MAKE) -f CMakeFiles/display.dir/build.make CMakeFiles/display.dir/display.c.s
 .PHONY : display.c.s
 
+errorPrinter.o: errorPrinter.c.o
+
+.PHONY : errorPrinter.o
+
+# target to build an object file
+errorPrinter.c.o:
+	$(MAKE) -f CMakeFiles/validation.dir/build.make CMakeFiles/validation.dir/errorPrinter.c.o
+	$(MAKE) -f CMakeFiles/display.dir/build.make CMakeFiles/display.dir/errorPrinter.c.o
+.PHONY : errorPrinter.c.o
+
+errorPrinter.i: errorPrinter.c.i
+
+.PHONY : errorPrinter.i
+
+# target to preprocess a source file
+errorPrinter.c.i:
+	$(MAKE) -f CMakeFiles/validation.dir/build.make CMakeFiles/validation.dir/errorPrinter.c.i
+	$(MAKE) -f CMakeFiles/display.dir/build.make CMakeFiles/display.dir/errorPrinter.c.i
+.PHONY : errorPrinter.c.i
+
+errorPrinter.s: errorPrinter.c.s
+
+.PHONY : errorPrinter.s
+
+# target to generate assembly for a file
+errorPrinter.c.s:
+	$(MAKE) -f CMakeFiles/validation.dir/build.make CMakeFiles/validation.dir/errorPrinter.c.s
+	$(MAKE) -f CMakeFiles/display.dir/build.make CMakeFiles/display.dir/errorPrinter.c.s
+.PHONY : errorPrinter.c.s
+
 validation.o: validation.c.o
 
 .PHONY : validation.o
@@ -203,6 +233,9 @@ help:
 	@echo "... display.o"
 	@echo "... display.i"
 	@echo "... display.s"
+	@echo "... errorPrinter.o"
+	@echo "... errorPrinter.i"
+	@echo "... errorPrinter.s"
 	@echo "... validation.o"
 	@echo "... validation.i"
 	@echo "... validation.s"

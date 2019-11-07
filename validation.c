@@ -4,37 +4,26 @@
 int main(int argc, char * args[])
 {
     if ( argc != EXPECTED_ARGS )
-        {
-        printError (INVALID_ARGUMENTS_ERROR);
+    {
+        printError ( INVALID_ARGUMENTS_ERROR );
         printf ( TERMINATION_SIGNAL );
         return ERROR_EXIT;
-        } else
-        {
+    } else
+    {
         int desiredEntries = processArgs ( args[ DESIRED_ENTRIES_INDEX ] );
         if ( desiredEntries == SENTINEL_VALUE )
-            {
-            printError ( DESIRED_ENTRIES_ERROR);
+        {
+            printError ( DESIRED_ENTRIES_ERROR );
             return ERROR_EXIT;
-            } else
-            {
+        } else
+        {
             readUntil ( desiredEntries );
-            }
-
-
         }
+        
+        
+    }
     puts ( TERMINATION_SIGNAL );
     return NO_ERROR_EXIT;
-}
-
-/**
- * FUNCTION NAME: printError
- * This function is in charge of printing errors to stderr
- * @param errMsg : message to be printed.
- */
-void printError(char * errMsg)
-{
-    fprintf ( stderr, "%s\n", errMsg);
-
 }
 
 /**
@@ -45,7 +34,7 @@ void printError(char * errMsg)
  */
 void printDate(Date *pDate)
 {
-
+    
     printf ( "%d/%d/%d \n", pDate->month, pDate->day, pDate->year );
 }
 
@@ -59,39 +48,39 @@ void printDate(Date *pDate)
  */
 bool validateYear( Date *datePtr)
 {
-
+    
     bool isLeap = isLeapYear ( datePtr->year );
-
+    
     if ( datePtr->month > DEC || datePtr->month < JAN )
-        {
+    {
         return false;
-        }
+    }
     if ( datePtr->month == FEB && isLeap )
-        {
+    {
         if ( datePtr->day < MIN_DAYS || datePtr->day > DAYS_LONG_FEB )
-            {
-            return false;
-            }
-        } else if ( datePtr->month == FEB )
         {
+            return false;
+        }
+    } else if ( datePtr->month == FEB )
+    {
         if ( datePtr->day < MIN_DAYS || datePtr->day > DAYS_SHORT_FEB )
-            {
+        {
             return false;
-            }
         }
+    }
     if ( !isShortMonth ( datePtr->month ) && datePtr->month != FEB )
-        {
+    {
         if ( datePtr->day < MIN_DAYS || datePtr->day > DAYS_IN_LONG_MONTH )
-            {
-            return false;
-            }
-        } else if ( isShortMonth ( datePtr->month ))
         {
-        if ( datePtr->day < MIN_DAYS || datePtr->day > DAYS_IN_MED_MONTH )
-            {
             return false;
-            }
         }
+    } else if ( isShortMonth ( datePtr->month ))
+    {
+        if ( datePtr->day < MIN_DAYS || datePtr->day > DAYS_IN_MED_MONTH )
+        {
+            return false;
+        }
+    }
     return true;
 }
 
@@ -109,21 +98,21 @@ bool validateBuffer(char *buffer, Date * datePtr)
     int day = ZERO_INITIALIZER;
     int month = ZERO_INITIALIZER;
     long year = ZERO_INITIALIZER;
-
+    
     if ( sscanf ( buffer, "%d/%d/%ld", &month, &day, &year ) != EXPECTED_SSCANF_MATCHES )
-        {
+    {
         return false;
-        } else
-        {
+    } else
+    {
         if ( year > MAX_YEAR || year < MIN_YEAR )
-            {
+        {
             return false;
-            }
+        }
         datePtr->day = day;
         datePtr->month = month;
         datePtr->year = year;
         return true;
-        }
+    }
 }
 
 /**
@@ -138,21 +127,21 @@ int processArgs(char arg[])
 {
     int counter = ZERO_INITIALIZER;
     while ( arg[ counter ] != '\0' )
-        {
+    {
         if ( !isdigit( arg[ counter ] ))
-            {
+        {
             return SENTINEL_VALUE;
-            }
+        }
         counter++;
-        }
+    }
     int tmpVal = atoi ( arg );
-    if ( tmpVal < 0 )
-        {
+    if ( tmpVal < ZERO_INITIALIZER )
+    {
         return SENTINEL_VALUE;
-        } else
-        {
+    } else
+    {
         return tmpVal;
-        }
+    }
 }
 
 /**
@@ -170,25 +159,24 @@ void readUntil(int desiredEntries)
     int validCounter = ZERO_INITIALIZER - 1;
 
     while ( scanf ( "%s", inputBuffer ) != EOF && validCounter < desiredEntries )
-        {
+    {
         if ( validateBuffer ( inputBuffer, CWDPtr ))
-            {
+        {
             if ( validateYear ( CWDPtr ))
-                {
+            {
                 printDate ( CWDPtr );
                 if ( desiredEntries != ALL_ENTRIES )
-                    {
+                {
                     validCounter++;
-                    }
-
                 }
             }
         }
+    }
 
     if(validCounter < desiredEntries && desiredEntries != ALL_ENTRIES)
-        {
-        printError (REACHED_END_OF_STREAM_ERROR);
-        }
+    {
+        printError ( REACHED_END_OF_STREAM_ERROR );
+    }
 }
 
 /**
@@ -205,21 +193,20 @@ void readUntil(int desiredEntries)
 bool isLeapYear(int year)
 {
     //THIS NUMBERS ARE NOT MAGIC, READ FUNCTION HEADER!!!!!!!!!!! (EYE!!!!)
-    if(year % 4 == ZERO_INITIALIZER)
+    if ( year % 4 == ZERO_INITIALIZER )
     {
-        if(year % 100 == ZERO_INITIALIZER)
+        if ( year % 100 == ZERO_INITIALIZER )
         {
             return false;
         } else
         {
-            if(year % 400 == ZERO_INITIALIZER)
+            if ( year % 400 == ZERO_INITIALIZER )
             {
                 return true;
             }
-
         }
         return true;
-   }
+    }
     else
     {
         return false;
@@ -235,7 +222,7 @@ bool isLeapYear(int year)
  */
 bool isShortMonth(int month)
 {
-    if(month == APR || month == JUN || month == SEP || month == NOV)
+    if ( month == APR || month == JUN || month == SEP || month == NOV )
     {
         return true;
     }
