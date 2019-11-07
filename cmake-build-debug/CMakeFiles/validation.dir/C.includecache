@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hectorramirez/CLionProjects/Assigment_5/validation.c
+validation.h
+/home/hectorramirez/CLionProjects/Assigment_5/validation.h
+
+/home/hectorramirez/CLionProjects/Assigment_5/validation.h
+stdio.h
+-
+limits.h
+-
+string.h
+-
+stdlib.h
+-
+ctype.h
+-
+

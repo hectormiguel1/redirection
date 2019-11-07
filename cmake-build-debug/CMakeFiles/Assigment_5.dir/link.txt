@@ -1,0 +1,1 @@
+/usr/bin/cc -g  -rdynamic CMakeFiles/Assigment_5.dir/main.c.o  -o Assigment_5 
