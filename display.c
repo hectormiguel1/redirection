@@ -12,7 +12,12 @@ int main(void)
     fclose ( datesPtr );
 }
 
-//TODO HEADER
+/**
+ * FUNCTION NAME: printFile
+ * This function is designed to take a pointer to a file and print out the contents of the file to stdout
+ * @param datesPtr : Pointer to file to print contents of
+ * @return N/A
+ */
 void printFile(FILE *datesPtr)
 {
     
@@ -23,7 +28,14 @@ void printFile(FILE *datesPtr)
     }
 }
 
-//TODO FIX MAGIC NUMBERS
+/**
+ * FUNCTION NAME: handleInput
+ * This function handles all input coming from stdin and buffers into an internal buffer, it then splits it into
+ * the proper sections of a date (Assumes that all input from stdin is prevalidated). it does the printing of the final
+ * date in the specified format according to program specifications.
+ * @param N/A
+ * @return N/A
+ */
 void handleInput()
 {
     char buffer[BUFFER_SIZE];

@@ -8,7 +8,7 @@ DEPENDENCIES = validation.h display.h
 
 build: build-valid build-display
 
-build-display : $(DEPENDECIES)
+build-display : $(DEPENDENCIES)
 	$(CC) $(DISPLAY_FILES) $(CFLAGS) $(DISPLAY_EXEC)
-build-valid: $(DEPENDECIES)
+build-valid: $(DEPENDENCIES)
 	$(CC) $(VALIDATION_FILES) $(CFLAGS) $(VALIDATION_EXEC)
