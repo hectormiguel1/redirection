@@ -44,10 +44,10 @@ RM = /home/hectorramirez/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hectorramirez/CLionProjects/Assigment_5
+CMAKE_SOURCE_DIR = /home/hectorramirez/CLionProjects/redirection
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hectorramirez/CLionProjects/Assigment_5/cmake-build-debug
+CMAKE_BINARY_DIR = /home/hectorramirez/CLionProjects/redirection/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -76,14 +76,14 @@ preinstall:
 CMakeFiles/validation.dir/all:
 	$(MAKE) -f CMakeFiles/validation.dir/build.make CMakeFiles/validation.dir/depend
 	$(MAKE) -f CMakeFiles/validation.dir/build.make CMakeFiles/validation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hectorramirez/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target validation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hectorramirez/CLionProjects/redirection/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target validation"
 .PHONY : CMakeFiles/validation.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/validation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hectorramirez/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hectorramirez/CLionProjects/redirection/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/validation.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hectorramirez/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hectorramirez/CLionProjects/redirection/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/validation.dir/rule
 
 # Convenience name for target.
@@ -103,14 +103,14 @@ CMakeFiles/validation.dir/clean:
 CMakeFiles/display.dir/all:
 	$(MAKE) -f CMakeFiles/display.dir/build.make CMakeFiles/display.dir/depend
 	$(MAKE) -f CMakeFiles/display.dir/build.make CMakeFiles/display.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hectorramirez/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target display"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hectorramirez/CLionProjects/redirection/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target display"
 .PHONY : CMakeFiles/display.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/display.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hectorramirez/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hectorramirez/CLionProjects/redirection/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/display.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hectorramirez/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hectorramirez/CLionProjects/redirection/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/display.dir/rule
 
 # Convenience name for target.

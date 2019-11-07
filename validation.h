@@ -38,18 +38,16 @@ typedef struct Date
 #define BUFFER_SIZE 20
 #define EXPECTED_SSCANF_MATCHES 3
 #define SENTINEL_VALUE -1
+#define DESIRED_ENTRIES_INDEX 1
+#define INVALID_ARGUMENTS_ERROR "VALIDATION MAIN: ARGUMENTS PASSED ARE NOT VALID"
+#define DESIRED_ENTRIES_ERROR "ARGUMENT VALID ENTRIES IS NOT VALID"
+#define REACHED_END_OF_STREAM_ERROR "REACHED END OF INPUT STREAM, NUMBER OF PROCESSED ENTRIES LESS THAN DESIRED!"
 
-
-/**
- * The rules for leap years state that a leap year must meet the fallowing criteria:
- * it must be divisible by 4,
- * it can not be divisible by 100,
- * it must be divisible by 400.
- * There for it is a constant definition that a leap year is one which is
- * mod 4 equals 0, mod 400 equals zero but mod 100 does not equal 0.
- */
-#define isLeapYear(Year) ((Year % 4) == 0 && (Year % 100) != 0 && (Year % 400) == 0) ? true : false
-/**
- * Check if the months passed is on the months with medium length (30) days.
- */
-#define isMediumMonth(Month) (Month == APR || Month == JUN || Month == SEP || Month == NOV ) ? true : false
+bool validateBuffer(char *buffer, Date *);
+bool validateYear(Date *pDate);
+bool isLeapYear(int);
+bool isShortMonth(int);
+void printDate(Date *pDate);
+int processArgs(char arg[]);
+void printError(char *);
+void readUntil(int);
