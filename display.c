@@ -28,9 +28,9 @@ void handleInput()
 {
     char buffer[BUFFER_SIZE];
     Date currentDate;
-    while ( scanf ( "%s", buffer ) != EOF && buffer[ 0 ] != TERMINATION_SIGNAL[ 0 ] )
+    while ( scanf ( "%s", buffer ) != EOF && buffer[ SENTINEL_VALUE_INDEX ] != TERMINATION_SIGNAL[ SENTINEL_VALUE_INDEX ] )
     {
-        if ( sscanf ( buffer, "%d/%d/%d", &currentDate.month, &currentDate.day, &currentDate.year ) ==
+        if ( sscanf ( buffer, SCANNER_FORMAT, &currentDate.month, &currentDate.day, &currentDate.year ) ==
              EXPECTED_SSCANF_MATCHES )
         {
             

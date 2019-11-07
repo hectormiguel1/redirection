@@ -9,6 +9,7 @@
 #define MONTH_CELL_SIZE 3
 #define DAY_CELL_SIZE 2
 #define YEAR_CELL_SIZE 20
+#define SENTINEL_VALUE_INDEX 0
 #define NEW_LINE "\n"
 #define PRINT_FORMAT "%*d %s %-*d\n"
 #define OPEN_DATES_ERROR "UNABLE TO OPEN Dates.dat. FOR READING!"

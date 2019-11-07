@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/hectorramirez/CLionProjects/redirection/errorPrinter.c" "/home/hectorramirez/CLionProjects/redirection/cmake-build-debug/CMakeFiles/validation.dir/errorPrinter.c.o"
-  "/home/hectorramirez/CLionProjects/redirection/validation.c" "/home/hectorramirez/CLionProjects/redirection/cmake-build-debug/CMakeFiles/validation.dir/validation.c.o"
+  "/home/hectorramirez/CLionProjects/Assigment_5/errorPrinter.c" "/home/hectorramirez/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles/validation.dir/errorPrinter.c.o"
+  "/home/hectorramirez/CLionProjects/Assigment_5/validation.c" "/home/hectorramirez/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles/validation.dir/validation.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

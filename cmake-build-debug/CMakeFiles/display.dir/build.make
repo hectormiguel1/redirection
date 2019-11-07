@@ -43,10 +43,10 @@ RM = /home/hectorramirez/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hectorramirez/CLionProjects/redirection
+CMAKE_SOURCE_DIR = /home/hectorramirez/CLionProjects/Assigment_5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hectorramirez/CLionProjects/redirection/cmake-build-debug
+CMAKE_BINARY_DIR = /home/hectorramirez/CLionProjects/Assigment_5/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/display.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/display.dir/flags.make
 
 CMakeFiles/display.dir/display.c.o: CMakeFiles/display.dir/flags.make
 CMakeFiles/display.dir/display.c.o: ../display.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hectorramirez/CLionProjects/redirection/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/display.dir/display.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/display.dir/display.c.o   -c /home/hectorramirez/CLionProjects/redirection/display.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hectorramirez/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/display.dir/display.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/display.dir/display.c.o   -c /home/hectorramirez/CLionProjects/Assigment_5/display.c
 
 CMakeFiles/display.dir/display.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/display.dir/display.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hectorramirez/CLionProjects/redirection/display.c > CMakeFiles/display.dir/display.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hectorramirez/CLionProjects/Assigment_5/display.c > CMakeFiles/display.dir/display.c.i
 
 CMakeFiles/display.dir/display.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/display.dir/display.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hectorramirez/CLionProjects/redirection/display.c -o CMakeFiles/display.dir/display.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hectorramirez/CLionProjects/Assigment_5/display.c -o CMakeFiles/display.dir/display.c.s
 
 CMakeFiles/display.dir/errorPrinter.c.o: CMakeFiles/display.dir/flags.make
 CMakeFiles/display.dir/errorPrinter.c.o: ../errorPrinter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hectorramirez/CLionProjects/redirection/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/display.dir/errorPrinter.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/display.dir/errorPrinter.c.o   -c /home/hectorramirez/CLionProjects/redirection/errorPrinter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hectorramirez/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/display.dir/errorPrinter.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/display.dir/errorPrinter.c.o   -c /home/hectorramirez/CLionProjects/Assigment_5/errorPrinter.c
 
 CMakeFiles/display.dir/errorPrinter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/display.dir/errorPrinter.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hectorramirez/CLionProjects/redirection/errorPrinter.c > CMakeFiles/display.dir/errorPrinter.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hectorramirez/CLionProjects/Assigment_5/errorPrinter.c > CMakeFiles/display.dir/errorPrinter.c.i
 
 CMakeFiles/display.dir/errorPrinter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/display.dir/errorPrinter.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hectorramirez/CLionProjects/redirection/errorPrinter.c -o CMakeFiles/display.dir/errorPrinter.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hectorramirez/CLionProjects/Assigment_5/errorPrinter.c -o CMakeFiles/display.dir/errorPrinter.c.s
 
 # Object files for target display
 display_OBJECTS = \
@@ -95,7 +95,7 @@ display: CMakeFiles/display.dir/display.c.o
 display: CMakeFiles/display.dir/errorPrinter.c.o
 display: CMakeFiles/display.dir/build.make
 display: CMakeFiles/display.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hectorramirez/CLionProjects/redirection/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable display"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hectorramirez/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable display"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/display.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/display.dir/clean:
 .PHONY : CMakeFiles/display.dir/clean
 
 CMakeFiles/display.dir/depend:
-	cd /home/hectorramirez/CLionProjects/redirection/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hectorramirez/CLionProjects/redirection /home/hectorramirez/CLionProjects/redirection /home/hectorramirez/CLionProjects/redirection/cmake-build-debug /home/hectorramirez/CLionProjects/redirection/cmake-build-debug /home/hectorramirez/CLionProjects/redirection/cmake-build-debug/CMakeFiles/display.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hectorramirez/CLionProjects/Assigment_5/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hectorramirez/CLionProjects/Assigment_5 /home/hectorramirez/CLionProjects/Assigment_5 /home/hectorramirez/CLionProjects/Assigment_5/cmake-build-debug /home/hectorramirez/CLionProjects/Assigment_5/cmake-build-debug /home/hectorramirez/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles/display.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/display.dir/depend
 

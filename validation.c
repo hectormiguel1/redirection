@@ -19,10 +19,9 @@ int main(int argc, char * args[])
         {
             readUntil ( desiredEntries );
         }
-        
-        
     }
     puts ( TERMINATION_SIGNAL );
+
     return NO_ERROR_EXIT;
 }
 
@@ -48,7 +47,6 @@ void printDate(Date *pDate)
  */
 bool validateYear( Date *datePtr)
 {
-    
     bool isLeap = isLeapYear ( datePtr->year );
     
     if ( datePtr->month > DEC || datePtr->month < JAN )
