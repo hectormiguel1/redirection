@@ -62,7 +62,7 @@ typedef struct Date
 #define TERMINATION_SIGNAL "-1"
 #define ERROR_EXIT 1
 #define NO_ERROR_EXIT 0
-#define BUFFER_SIZE 20
+#define BUFFER_SIZE 100
 #define EXPECTED_SSCANF_MATCHES 3
 #define SENTINEL_VALUE -1
 #define DESIRED_ENTRIES_INDEX 1

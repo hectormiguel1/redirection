@@ -69,10 +69,11 @@ void printFile(FILE *datesPtr)
 {
     
     char buffer[BUFFER_SIZE];
-    while ( fscanf ( datesPtr, "%s", buffer ) != EOF)
+    while ( fgets (buffer, BUFFER_SIZE, datesPtr ) != NULL)
     {
-        printf ( "%s\n", buffer );
+        printf ( "%s", buffer );
     }
+    printf(NEW_LINE);
 }
 
 /**

@@ -145,7 +145,7 @@ bool validateBuffer(char *buffer, Date * datePtr)
     int month = ZERO_INITIALIZER;
     long year = ZERO_INITIALIZER;
     
-    if ( sscanf ( buffer, "%d/%d/%ld", &month, &day, &year ) != EXPECTED_SSCANF_MATCHES )
+    if ( sscanf ( buffer, " %d / %d / %ld", &month, &day, &year ) != EXPECTED_SSCANF_MATCHES )
     {
         return false;
     } else
@@ -204,7 +204,7 @@ void readUntil(int desiredEntries)
     char inputBuffer[BUFFER_SIZE];
     int validCounter = ZERO_INITIALIZER - 1;
 
-    while ( scanf ( "%s", inputBuffer ) != EOF && validCounter < desiredEntries )
+    while ( fgets(inputBuffer,BUFFER_SIZE,stdin) != NULL && validCounter < desiredEntries )
     {
         if ( validateBuffer ( inputBuffer, CWDPtr ))
         {

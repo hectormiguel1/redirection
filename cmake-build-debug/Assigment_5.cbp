@@ -17,16 +17,6 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/hector/CLionProjects/Assigment_5/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/home/hector/CLionProjects/Assigment_5/cmake-build-debug"/>
 				<Option type="4"/>
@@ -37,28 +27,18 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="validation">
-				<Option output="/home/hector/CLionProjects/Assigment_5/cmake-build-debug/validation" prefix_auto="0" extension_auto="0"/>
+			<Target title="edit_cache">
 				<Option working_dir="/home/hector/CLionProjects/Assigment_5/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
+				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 validation"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="validation/fast">
-				<Option output="/home/hector/CLionProjects/Assigment_5/cmake-build-debug/validation" prefix_auto="0" extension_auto="0"/>
+			<Target title="validationMain">
+				<Option output="/home/hector/CLionProjects/Assigment_5/cmake-build-debug/validationMain" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/hector/CLionProjects/Assigment_5/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -71,14 +51,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 validation/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 validationMain"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="display">
-				<Option output="/home/hector/CLionProjects/Assigment_5/cmake-build-debug/display" prefix_auto="0" extension_auto="0"/>
+			<Target title="validationMain/fast">
+				<Option output="/home/hector/CLionProjects/Assigment_5/cmake-build-debug/validationMain" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/hector/CLionProjects/Assigment_5/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -91,14 +71,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 display"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 validationMain/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="display/fast">
-				<Option output="/home/hector/CLionProjects/Assigment_5/cmake-build-debug/display" prefix_auto="0" extension_auto="0"/>
+			<Target title="displayMain">
+				<Option output="/home/hector/CLionProjects/Assigment_5/cmake-build-debug/displayMain" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/hector/CLionProjects/Assigment_5/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -111,7 +91,27 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 display/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 displayMain"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="displayMain/fast">
+				<Option output="/home/hector/CLionProjects/Assigment_5/cmake-build-debug/displayMain" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hector/CLionProjects/Assigment_5/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 displayMain/fast"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/hector/CLionProjects/Assigment_5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -119,23 +119,23 @@
 			</Target>
 		</Build>
 		<Unit filename="/home/hector/CLionProjects/Assigment_5/display.c">
-			<Option target="display"/>
+			<Option target="displayMain"/>
 		</Unit>
 		<Unit filename="/home/hector/CLionProjects/Assigment_5/display.h">
-			<Option target="display"/>
+			<Option target="displayMain"/>
 		</Unit>
 		<Unit filename="/home/hector/CLionProjects/Assigment_5/errorPrinter.c">
-			<Option target="validation"/>
-			<Option target="display"/>
+			<Option target="validationMain"/>
+			<Option target="displayMain"/>
 		</Unit>
 		<Unit filename="/home/hector/CLionProjects/Assigment_5/errorPrinter.h">
-			<Option target="display"/>
+			<Option target="displayMain"/>
 		</Unit>
 		<Unit filename="/home/hector/CLionProjects/Assigment_5/validation.c">
-			<Option target="validation"/>
+			<Option target="validationMain"/>
 		</Unit>
 		<Unit filename="/home/hector/CLionProjects/Assigment_5/validation.h">
-			<Option target="validation"/>
+			<Option target="validationMain"/>
 		</Unit>
 		<Unit filename="/home/hector/CLionProjects/Assigment_5/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

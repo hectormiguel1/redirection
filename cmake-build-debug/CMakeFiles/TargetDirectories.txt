@@ -1,4 +1,4 @@
-/home/hector/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/hector/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/hector/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles/validation.dir
-/home/hector/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles/display.dir
+/home/hector/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/hector/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles/validationMain.dir
+/home/hector/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles/displayMain.dir

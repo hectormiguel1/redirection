@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/hector/CLionProjects/Assigment_5/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/hector/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/hector/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,30 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named validation
+# Target rules for targets named validationMain
 
 # Build rule for target.
-validation: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 validation
-.PHONY : validation
+validationMain: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 validationMain
+.PHONY : validationMain
 
 # fast build rule for target.
-validation/fast:
-	$(MAKE) -f CMakeFiles/validation.dir/build.make CMakeFiles/validation.dir/build
-.PHONY : validation/fast
+validationMain/fast:
+	$(MAKE) -f CMakeFiles/validationMain.dir/build.make CMakeFiles/validationMain.dir/build
+.PHONY : validationMain/fast
 
 #=============================================================================
-# Target rules for targets named display
+# Target rules for targets named displayMain
 
 # Build rule for target.
-display: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 display
-.PHONY : display
+displayMain: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 displayMain
+.PHONY : displayMain
 
 # fast build rule for target.
-display/fast:
-	$(MAKE) -f CMakeFiles/display.dir/build.make CMakeFiles/display.dir/build
-.PHONY : display/fast
+displayMain/fast:
+	$(MAKE) -f CMakeFiles/displayMain.dir/build.make CMakeFiles/displayMain.dir/build
+.PHONY : displayMain/fast
 
 display.o: display.c.o
 
@@ -142,7 +142,7 @@ display.o: display.c.o
 
 # target to build an object file
 display.c.o:
-	$(MAKE) -f CMakeFiles/display.dir/build.make CMakeFiles/display.dir/display.c.o
+	$(MAKE) -f CMakeFiles/displayMain.dir/build.make CMakeFiles/displayMain.dir/display.c.o
 .PHONY : display.c.o
 
 display.i: display.c.i
@@ -151,7 +151,7 @@ display.i: display.c.i
 
 # target to preprocess a source file
 display.c.i:
-	$(MAKE) -f CMakeFiles/display.dir/build.make CMakeFiles/display.dir/display.c.i
+	$(MAKE) -f CMakeFiles/displayMain.dir/build.make CMakeFiles/displayMain.dir/display.c.i
 .PHONY : display.c.i
 
 display.s: display.c.s
@@ -160,7 +160,7 @@ display.s: display.c.s
 
 # target to generate assembly for a file
 display.c.s:
-	$(MAKE) -f CMakeFiles/display.dir/build.make CMakeFiles/display.dir/display.c.s
+	$(MAKE) -f CMakeFiles/displayMain.dir/build.make CMakeFiles/displayMain.dir/display.c.s
 .PHONY : display.c.s
 
 errorPrinter.o: errorPrinter.c.o
@@ -169,8 +169,8 @@ errorPrinter.o: errorPrinter.c.o
 
 # target to build an object file
 errorPrinter.c.o:
-	$(MAKE) -f CMakeFiles/validation.dir/build.make CMakeFiles/validation.dir/errorPrinter.c.o
-	$(MAKE) -f CMakeFiles/display.dir/build.make CMakeFiles/display.dir/errorPrinter.c.o
+	$(MAKE) -f CMakeFiles/validationMain.dir/build.make CMakeFiles/validationMain.dir/errorPrinter.c.o
+	$(MAKE) -f CMakeFiles/displayMain.dir/build.make CMakeFiles/displayMain.dir/errorPrinter.c.o
 .PHONY : errorPrinter.c.o
 
 errorPrinter.i: errorPrinter.c.i
@@ -179,8 +179,8 @@ errorPrinter.i: errorPrinter.c.i
 
 # target to preprocess a source file
 errorPrinter.c.i:
-	$(MAKE) -f CMakeFiles/validation.dir/build.make CMakeFiles/validation.dir/errorPrinter.c.i
-	$(MAKE) -f CMakeFiles/display.dir/build.make CMakeFiles/display.dir/errorPrinter.c.i
+	$(MAKE) -f CMakeFiles/validationMain.dir/build.make CMakeFiles/validationMain.dir/errorPrinter.c.i
+	$(MAKE) -f CMakeFiles/displayMain.dir/build.make CMakeFiles/displayMain.dir/errorPrinter.c.i
 .PHONY : errorPrinter.c.i
 
 errorPrinter.s: errorPrinter.c.s
@@ -189,8 +189,8 @@ errorPrinter.s: errorPrinter.c.s
 
 # target to generate assembly for a file
 errorPrinter.c.s:
-	$(MAKE) -f CMakeFiles/validation.dir/build.make CMakeFiles/validation.dir/errorPrinter.c.s
-	$(MAKE) -f CMakeFiles/display.dir/build.make CMakeFiles/display.dir/errorPrinter.c.s
+	$(MAKE) -f CMakeFiles/validationMain.dir/build.make CMakeFiles/validationMain.dir/errorPrinter.c.s
+	$(MAKE) -f CMakeFiles/displayMain.dir/build.make CMakeFiles/displayMain.dir/errorPrinter.c.s
 .PHONY : errorPrinter.c.s
 
 validation.o: validation.c.o
@@ -199,7 +199,7 @@ validation.o: validation.c.o
 
 # target to build an object file
 validation.c.o:
-	$(MAKE) -f CMakeFiles/validation.dir/build.make CMakeFiles/validation.dir/validation.c.o
+	$(MAKE) -f CMakeFiles/validationMain.dir/build.make CMakeFiles/validationMain.dir/validation.c.o
 .PHONY : validation.c.o
 
 validation.i: validation.c.i
@@ -208,7 +208,7 @@ validation.i: validation.c.i
 
 # target to preprocess a source file
 validation.c.i:
-	$(MAKE) -f CMakeFiles/validation.dir/build.make CMakeFiles/validation.dir/validation.c.i
+	$(MAKE) -f CMakeFiles/validationMain.dir/build.make CMakeFiles/validationMain.dir/validation.c.i
 .PHONY : validation.c.i
 
 validation.s: validation.c.s
@@ -217,7 +217,7 @@ validation.s: validation.c.s
 
 # target to generate assembly for a file
 validation.c.s:
-	$(MAKE) -f CMakeFiles/validation.dir/build.make CMakeFiles/validation.dir/validation.c.s
+	$(MAKE) -f CMakeFiles/validationMain.dir/build.make CMakeFiles/validationMain.dir/validation.c.s
 .PHONY : validation.c.s
 
 # Help Target
@@ -226,10 +226,10 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... validation"
-	@echo "... display"
+	@echo "... edit_cache"
+	@echo "... validationMain"
+	@echo "... displayMain"
 	@echo "... display.o"
 	@echo "... display.i"
 	@echo "... display.s"
