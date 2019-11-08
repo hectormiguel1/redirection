@@ -1,6 +1,4 @@
-//
-// Created by hectorramirez on 11/6/19.
-//
+
 #include "validation.h"
 #include "errorPrinter.h"
 
