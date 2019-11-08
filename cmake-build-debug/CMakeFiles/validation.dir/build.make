@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/hectorramirez/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/hector/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/hectorramirez/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/hector/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hectorramirez/CLionProjects/Assigment_5
+CMAKE_SOURCE_DIR = /home/hector/CLionProjects/Assigment_5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hectorramirez/CLionProjects/Assigment_5/cmake-build-debug
+CMAKE_BINARY_DIR = /home/hector/CLionProjects/Assigment_5/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/validation.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/validation.dir/flags.make
 
 CMakeFiles/validation.dir/validation.c.o: CMakeFiles/validation.dir/flags.make
 CMakeFiles/validation.dir/validation.c.o: ../validation.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hectorramirez/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/validation.dir/validation.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/validation.dir/validation.c.o   -c /home/hectorramirez/CLionProjects/Assigment_5/validation.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hector/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/validation.dir/validation.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/validation.dir/validation.c.o   -c /home/hector/CLionProjects/Assigment_5/validation.c
 
 CMakeFiles/validation.dir/validation.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/validation.dir/validation.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hectorramirez/CLionProjects/Assigment_5/validation.c > CMakeFiles/validation.dir/validation.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hector/CLionProjects/Assigment_5/validation.c > CMakeFiles/validation.dir/validation.c.i
 
 CMakeFiles/validation.dir/validation.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/validation.dir/validation.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hectorramirez/CLionProjects/Assigment_5/validation.c -o CMakeFiles/validation.dir/validation.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hector/CLionProjects/Assigment_5/validation.c -o CMakeFiles/validation.dir/validation.c.s
 
 CMakeFiles/validation.dir/errorPrinter.c.o: CMakeFiles/validation.dir/flags.make
 CMakeFiles/validation.dir/errorPrinter.c.o: ../errorPrinter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hectorramirez/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/validation.dir/errorPrinter.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/validation.dir/errorPrinter.c.o   -c /home/hectorramirez/CLionProjects/Assigment_5/errorPrinter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hector/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/validation.dir/errorPrinter.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/validation.dir/errorPrinter.c.o   -c /home/hector/CLionProjects/Assigment_5/errorPrinter.c
 
 CMakeFiles/validation.dir/errorPrinter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/validation.dir/errorPrinter.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hectorramirez/CLionProjects/Assigment_5/errorPrinter.c > CMakeFiles/validation.dir/errorPrinter.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/hector/CLionProjects/Assigment_5/errorPrinter.c > CMakeFiles/validation.dir/errorPrinter.c.i
 
 CMakeFiles/validation.dir/errorPrinter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/validation.dir/errorPrinter.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hectorramirez/CLionProjects/Assigment_5/errorPrinter.c -o CMakeFiles/validation.dir/errorPrinter.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/hector/CLionProjects/Assigment_5/errorPrinter.c -o CMakeFiles/validation.dir/errorPrinter.c.s
 
 # Object files for target validation
 validation_OBJECTS = \
@@ -95,7 +95,7 @@ validation: CMakeFiles/validation.dir/validation.c.o
 validation: CMakeFiles/validation.dir/errorPrinter.c.o
 validation: CMakeFiles/validation.dir/build.make
 validation: CMakeFiles/validation.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hectorramirez/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable validation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hector/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable validation"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/validation.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/validation.dir/clean:
 .PHONY : CMakeFiles/validation.dir/clean
 
 CMakeFiles/validation.dir/depend:
-	cd /home/hectorramirez/CLionProjects/Assigment_5/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hectorramirez/CLionProjects/Assigment_5 /home/hectorramirez/CLionProjects/Assigment_5 /home/hectorramirez/CLionProjects/Assigment_5/cmake-build-debug /home/hectorramirez/CLionProjects/Assigment_5/cmake-build-debug /home/hectorramirez/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles/validation.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hector/CLionProjects/Assigment_5/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hector/CLionProjects/Assigment_5 /home/hector/CLionProjects/Assigment_5 /home/hector/CLionProjects/Assigment_5/cmake-build-debug /home/hector/CLionProjects/Assigment_5/cmake-build-debug /home/hector/CLionProjects/Assigment_5/cmake-build-debug/CMakeFiles/validation.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/validation.dir/depend
 

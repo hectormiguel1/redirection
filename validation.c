@@ -1,5 +1,53 @@
-//Used to validate Dates
-#include "validation.h"
+/*=============================================================================
+|   Source code:  [validation.c]
+|   Author:  [Hector M. Ramirez ]
+|   Student ID:  [5708475]
+|   Assignment:  Program #[5] [Redirection and Pipes]
+|
+|   Course:  [COP4338 (Programing III)]
+|   Section:  [U04]
+|   Instructor:  William Feild
+|   Due Date:  [November 12, 2019], at the beginning of class
+|
+|I hereby certify that this collective work is my own
+|and none of it is the work of any other person or entity.
+|______________________________________ [Signature]|
+|        Language:  [C]
+|  Compile/Run:  [Two options are provided to compile to program, make and gcc. printError.h validation.h display.h must be in directory!!!! ]
+|       [MAKE]:  Inside the directory validation.c printError.c printError.h validation.h display.c display.h
+|               $make
+|        [GCC]:  Inside the directory containing validation.c printError.c printError.h validation.h
+|               $gcc -std=c99 validation.c printError.c –o validationMain
+|        [RUN (STAND-ALONE]: validation can be used standalone (stand alone it will read from stdin and print to stdout
+|                               dates that were found to be valid until either end of stream  (EOF) or  number of valid
+|                               dates found equals the numbers desired (passed as an argument).
+|                               DESIRED NUMBER OF VALID ENTRIES must be a positive integer (0 to INT_MAX).
+|                               0 for all entries till EOF
+|               $ ./validation [DESIRED NUMBER OF VALID ENTRIES]
+|       [RUN COMBINED] : combined with display, this program will process the input from stdin and send it to main
+|                           to be displayed in the specified format as per the specifications.
+|               $ ./validationMain [DESIRED NUMBER OF VALID ENTRIES] | ./displayMain
+|  +-----------------------------------------------------------------------------
+|
+|  Description:  [This program will read dates from stdin and validate that it is a valid date. A valid date is a date
+|                   who's month is between JAN (1) and DEC (12) and the days is between 1 and total days in that month.
+|                   A year is considered to be valid so long as it is in the range of INT_MIN to INT_MAX. ]
+|
+|        Input: [Input will be read from stdin (what ever that might be) and attempted to construct into a date.
+|                 if successful, the date will be validated to make sure that it conforms to what a valid date is as
+|                 explained the section above.]
+|       Output: [If the date constructed from the input is considered to be valid, it will be printed to stdout (what ever
+|                   that might be). Several messages will be printed to stderr if any errors or warnings occur during the
+|                    execution. ]
+|      Process: [ We start by storing the input coming from stdin into a buffer and then using sscanf we attempt to
+|                   convert the input into a date, if it fails to read the input, the input is discarded, if successful
+|                   a date is constructed and passed along for validation. if validated it will be printed to stdout.]
+|
+|   Required Features Not Included:[All features are working as expected.]
+|
+|   Known Bugs:  [No known bugs]
+|  *===========================================================================*/
+#include "validation.h" //Used for shared constants and imports.
 
 int main(int argc, char * args[])
 {
