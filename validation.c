@@ -15,7 +15,7 @@
 |        Language:  [C]
 |  Compile/Run:  [Two options are provided to compile to program, make and gcc. printError.h validation.h display.h must be in directory!!!! ]
 |       [MAKE]:  Inside the directory validation.c printError.c printError.h validation.h display.c display.h
-|               $make
+|               $make or $make build-valid
 |        [GCC]:  Inside the directory containing validation.c printError.c printError.h validation.h
 |               $gcc -std=c99 validation.c printError.c –o validationMain
 |        [RUN (STAND-ALONE]: validation can be used standalone (stand alone it will read from stdin and print to stdout

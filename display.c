@@ -15,7 +15,7 @@
 |        Language:  [C]
 |  Compile/Run:  [Two options are provided to compile to program, make and gcc. printError.h validation.h display.h must be in directory!!!! ]
 |       [MAKE]:  Inside the directory validation.c printError.c printError.h validation.h display.c display.h
-|               $make
+|               $make or $make build-display
 |        [GCC]:  Inside the directory containing validation.c printError.c printError.h validation.h
 |               $gcc -std=c99 display.c printError.c –o displayMain
 |        [RUN (STAND-ALONE]: running in standalone mode, display will not validate the input,
@@ -55,7 +55,11 @@ int main(void)
         printError (OPEN_DATES_ERROR);
     }
     handleInput ( );
-    printFile ( datesPtr );
+
+    if(datesPtr != NULL)
+    {
+        printFile ( datesPtr );
+    }
     fclose ( datesPtr );
 }
 
@@ -90,7 +94,7 @@ void handleInput()
     Date currentDate;
     while ( scanf ( "%s", buffer ) != EOF && buffer[ SENTINEL_VALUE_INDEX ] != TERMINATION_SIGNAL[ SENTINEL_VALUE_INDEX ] )
     {
-        if ( sscanf ( buffer, SCANNER_FORMAT, &currentDate.month, &currentDate.day, &currentDate.year ) ==
+        if (sscanf ( buffer, SCANNER_FORMAT, &currentDate.month, &currentDate.day, &currentDate.year ) ==
              EXPECTED_SSCANF_MATCHES )
         {
             

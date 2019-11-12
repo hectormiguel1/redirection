@@ -13,14 +13,14 @@
  * PRINT_FORMAT: format string used when printing the dates in the specified format (see project specs)
  * OPEN_DATES_ERROR: error string to be printed if the Dates.dat could not be opened for reading.
  */
-#define DATES_PATH "Dates.dat"
+#define DATES_PATH "dates.dat"
 #define MODE "r"
 #define DAY_CELL_SIZE 2
 #define YEAR_CELL_SIZE 20
 #define SENTINEL_VALUE_INDEX 0
 #define NEW_LINE "\n"
 #define PRINT_FORMAT "%*d %s %-*d\n"
-#define OPEN_DATES_ERROR "UNABLE TO OPEN Dates.dat. FOR READING!"
+#define OPEN_DATES_ERROR "UNABLE TO OPEN dates.dat. FOR READING!"
 
 /**
  * const char pointer to char array containing the 3 letter month SYMBOL.
